@@ -1,0 +1,62 @@
+.container-slider{
+    top: 130px;
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;/*oculta las demas imagenes, solo muestra una */
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;        /*borde , sombreado inferior*/
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 400%; /*mientras mas imagenes quiera agregar mas se debe aumentar el %*/
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*Para mantener el mismo tamaño de las imagenes*/
+}
+
+.slider-btn{
+    position: absolute;/*se posiciona uno abajo de otro*/
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);/*centrarlo de manera vertical*/
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;/*redondea los bordes*/
+    cursor: pointer;/*da el efecto de ser un boton*/
+}
+
+.slider-btn:hover{
+    background: #fff;
+}
+
+.slider-btn-derecha{
+    right: 10px;
+}
+
+.slider-btn-izquierda{
+    left: 10px;
+}
+
+.cuerpo-principal{
+    margin-top: 110px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
